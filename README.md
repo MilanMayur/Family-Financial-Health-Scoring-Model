@@ -4,7 +4,7 @@ This project provides a FastAPI-based service to:
 2-Generate and serve spending distribution graphs as PNG images.
 3-Offer insights into financial performance and suggest improvements.
 
-Dependencies:
+## Dependencies:
 1-FastAPI: Web framework for building APIs.
 2-Uvicorn: ASGI server for running FastAPI.
 3-Matplotlib: For generating graphs.
