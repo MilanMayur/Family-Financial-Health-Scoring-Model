@@ -1,0 +1,14 @@
+{
+  "income": 100000,
+  "savings": 15000,
+  "monthly_expenses": 50000,
+  "loan_payments": 10000,
+  "credit_card_spending": 7000,
+  "financial_goals_met": 60,
+  "category_distribution": {
+    "Travel": 5000,
+    "Entertainment": 3000,
+    "Food": 2000,
+    "Shopping": 4000
+  }
+}
