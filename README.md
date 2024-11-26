@@ -1,35 +1,54 @@
 # Family-Financial-Health-Scoring-Model
 This project provides a FastAPI-based service to:
+
 1-Calculate financial health scores for families based on provided financial data.
+
 2-Generate and serve spending distribution graphs as PNG images.
+
 3-Offer insights into financial performance and suggest improvements.
 
-## Dependencies:
+## Dependencies:-
 1-FastAPI: Web framework for building APIs.
+
 2-Uvicorn: ASGI server for running FastAPI.
+
 3-Matplotlib: For generating graphs.
+
 4-NumPy: Numerical operations for scoring calculations.
+
 5-Pydantic: Data validation and type enforcement.
 
-## Installation:
+## Installation:-
 1-Install dependencies
+
 2-Run application-
+  
   Open terminal in the directory and type "uvicorn score_api:app --reload".
+  
   Open the API documentation for interactive Swagger UI.
 
-## Steps for model creation:
+## Steps for model creation:-
 1-Load and preprocess the dataset-
+  
   Ensure data types are correct.
+  
   Handle missing values if any.
-2-Analyze patterns and correlations-
-  Summarize spending by category and calculate savings-to-income ratios.
-3-Build a scoring model-
-  Normalize key metrics (e.g., savings-to-income ratio, goal achievement).
-  Assign weights to each metric and compute a composite score (range: 0–100).
-4-Visualize insights-
-  Visualize Spending distribution across categories, Family-wise financial score distributions, Member-wise spending trends and Correlation   of financial metrics.
 
-## Features of Model
+2-Analyze patterns and correlations-
+  
+  Summarize spending by category and calculate savings-to-income ratios.
+
+3-Build a scoring model-
+  
+  Normalize key metrics (e.g., savings-to-income ratio, goal achievement).
+  
+  Assign weights to each metric and compute a composite score (range: 0–100).
+
+4-Visualize insights-
+  
+  Visualize Spending distribution across categories, Family-wise financial score distributions, Member-wise spending trends and Correlation of financial metrics.
+
+## Features of Model:-
 1-Data Analysis:
   
   Family-level and member-level spending patterns.
@@ -50,7 +69,7 @@ This project provides a FastAPI-based service to:
   
   Member-level spending trends to pinpoint outliers or high spenders.
 
-## Scoring weights
+## Scoring weights:-
 1-Savings-to-Income Ratio (30%): Indicates the ability to save, a crucial factor in financial health.
 
 2-Monthly Expenses (20%): High expenses relative to income lower the score, emphasizing budgeting.
@@ -63,7 +82,7 @@ This project provides a FastAPI-based service to:
 
 6-Financial Goals Met (10%): Indicates progress toward planned objectives.
 
-## Features of Scoring API:
+## Features of Scoring API:-
 ### Financial Score Calculation-
   1-Scores are computed based on savings, expenses, loans, credit card spending, and financial goals.
   
