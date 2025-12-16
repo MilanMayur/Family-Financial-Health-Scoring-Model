@@ -87,15 +87,44 @@ File: score_api.py
 - Generates insights & improvement recommendations
 - Creates a spending distribution graph
 
+## Insights & Recommendations Logic
+The API automatically detects:
+- Low savings
+- High expenses
+- Excessive loan burden
+- High credit card usage
+- High discretionary spending
+And provides:
+- Impact on score
+- Exact amount to improve
+- Potential score improvement
 
+## How to Run
+1- Install Dependencies
+```
+pip install fastapi uvicorn pandas numpy matplotlib seaborn openpyxl
+```
+2- Run the API
+```
+uvicorn score_api:app --reload
+```
+3- Access API Docs
+```
+http://127.0.0.1:8000/docs
+```
 
+### Limitations
+- Rule-based scoring (not ML-based)
+- Static weight assignment
+- Single-period financial snapshot
+- Category penalties are predefined
+- No authentication or database integration
 
-
-
-
-
-
-
-
-
+### Future Improvements
+- ML-based financial risk prediction
+- Time-series trend analysis
+- Personalized weight tuning
+- Frontend dashboard integration
+- Secure user authentication
+- Database-backed storage
 
