@@ -82,7 +82,7 @@ Visualizations included in model.ipynb:
 ## Financial Scoring API (FastAPI)
 File: score_api.py
 
-### API Features
+### API Features:
 - Accepts financial data as JSON
 - Calculates individual and total financial scores
 - Generates insights & improvement recommendations
@@ -114,14 +114,14 @@ uvicorn score_api:app --reload
 http://127.0.0.1:8000/docs
 ```
 
-### Limitations
+### Limitations:
 - Rule-based scoring (not ML-based)
 - Static weight assignment
 - Single-period financial snapshot
 - Category penalties are predefined
 - No authentication or database integration
 
-### Future Improvements
+### Future Improvements:
 - ML-based financial risk prediction
 - Time-series trend analysis
 - Personalized weight tuning
