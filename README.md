@@ -69,6 +69,7 @@ Each family member’s record is scored using weighted components:
 | Credit Card Spending       | 10%    |
 | Spending Category Behavior | 10%    |
 | Financial Goals Met        | 10%    |
+
 Final score is computed as a weighted sum of all components.
 
 ## Exploratory Data Analysis
